@@ -20,7 +20,7 @@ function outerFunction(name, age) {
 
             var randomVar = "djfgsldjf"
             console.log(designation)
-
+            console.log(randomVar)
             function innerinnerinnerFunction() {
                 console.log(randomVar)
             }
