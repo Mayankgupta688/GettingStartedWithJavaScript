@@ -6,7 +6,7 @@
 
 debugger;
 
-var data = (() => {
+var data = (function() {
     var name = "Mayank";
     var age = 20;
     console.log("Hello World...")
