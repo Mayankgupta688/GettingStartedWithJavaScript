@@ -7,6 +7,7 @@ function outerFunction() {
     var count = 10;
     function innerFunction() {
         console.log("Hello From Inner Function...")
+        console.log(count)
     };
 
     innerFunction();

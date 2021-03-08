@@ -8,6 +8,8 @@ employee.prototype.getName = function() {
     console.log(this.name)
 }
 
+employee.prototype.userName = "Mayank"
+
 debugger;
 var employeeOne = new employee("Mayank", 10, "Developer");
 var employeeTwo = new employee("Anshul", 10, "Manager");
