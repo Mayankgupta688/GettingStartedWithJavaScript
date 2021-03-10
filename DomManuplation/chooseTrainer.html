@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getting Started with DOM Manuplation</title>
+  </head>
+
+  <body>
+
+    Choose Trainer <input type="text" id="choose_trainer" /><br/><br/>
+    <input type="button" value="Select" onclick="displayTechnology()" /><br/><br/>
+
+    <h1>List of Available Courses:</h1>
+    <div style="border: 1px solid red; height: 200px; overflow-y: auto;" id="trainer_technology"></div><br/><br/>
+    <div style="border: 1px solid red; height: 200px; overflow-y: auto;" id="selected_course">
+      <h1>List of My Selected Courses...</h1>
+    </div>
+    <script src="./chooseTrainer.js"></script>
+  </body>
+</html>

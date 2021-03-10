@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getting Started with DOM Manuplation</title>
+  </head>
+
+  <body>
+    Enter Name: <input class="input_element" type="text" id="user_name" onkeyup="showButton()" /><br/><br/>
+    Enter Password: <input class="input_element" type="text" id="user_password" onkeyup="showButton()" /><br/><br/>
+    <input id="submit_button" type="button" value="Submit" onclick="verifyInputData()" /><br/><br/>
+    <input id="change_button" type="button" value="Change Password" onclick="verifyInputData()" /><br/><br/>
+    <strong style="color: red; display: none;" id="invalid_input">Input not Provided Correctly</strong>
+
+    <script src="./validatingInput.js"></script>
+  </body>
+</html>
