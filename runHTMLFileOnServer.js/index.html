@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Running on Server</title>
+  </head>
+
+  <body>
+    <h1>List Of Employee are Given Below...</h1>
+    <div id="root"></div>
+
+
+    <script>
+      var data = fetch("https://5c055de56b84ee00137d25a0.mockapi.io/api/v1/employees")
+      .then(handleErrors)
+      .then((res) => {
+        debugger;
+        if(res.status == "500") {
+          alert("Error Getting the data ")
+          return;
+        }
+        res.json().then((data) => {
+          for(let emp of data) {
+            document.getElementById("root").innerHTML += `<h1>User Name is: ${emp.name}</h1><hr/>`
+          }
+        })
+
+        console.log("Data Conversion in Action....")
+      }).catch((err) => {
+        debugger;
+      })
+
+      debugger;
+      console.log("anything...");
+
+      function handleErrors(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response;
+    }
+    </script>
+  </body>
+</html>
